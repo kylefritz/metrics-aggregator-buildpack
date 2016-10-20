@@ -1,0 +1,12 @@
+#!/bin/sh
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+
+echo "-----> Metrics Aggregator Daemon"
+
+echo "       Adding to build/vendor directory"
+mkdir -p "$BUILD_DIR/vendor/mad"
+cp ./vendor/mad-1.1.0/* "$BUILD_DIR/vendor/mad"
+
+echo "-----> Happy Metrics Aggregating"

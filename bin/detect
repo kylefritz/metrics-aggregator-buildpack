@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "Metrics Aggregator Daemon"
+exit 0
