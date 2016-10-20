@@ -9,4 +9,8 @@ echo "       Adding to build/vendor directory"
 mkdir -p "$BUILD_DIR/vendor/mad"
 cp -r ./vendor/mad-1.1.0/* "$BUILD_DIR/vendor/mad"
 
+echo "       Adding mad to PATH"
+mkdir -p $BUILD_DIR/.profile.d
+cp ./metrics-aggregator-path.sh $BUILD_DIR/.profile.d
+
 echo "-----> Happy Metrics Aggregating"
